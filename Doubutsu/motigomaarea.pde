@@ -10,7 +10,7 @@ class MochigomaArea extends AbstractArea {
       }
     }
   }
-   int getBlankYIndex() {
+    int getBlankYIndex() {
     for (int i=this.posY; i<this.posY+this.tate; i++) {
       AbstractKoma koma = komaList.getKomaFromPlace(this.posX, i);
       if (koma==null) return i;
